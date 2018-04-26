@@ -1,0 +1,212 @@
+/*Adding new fonts */
+@font-face {
+  font-family: Cabin;
+  src: url(../fonts/Cabin/Cabin-Regular.ttf);
+}
+
+@font-face{
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/*Styling for header and footer */
+header, footer{
+  font-family: Cabin;
+  background-color: #eeccff;
+  margin: 0;
+}
+footer{
+  text-align: center;
+  color: #440066;
+  padding-top: 5px;
+}
+header{
+  padding-bottom: 15px;
+  margin: 0;
+}
+body{
+  margin: 0 auto;
+}
+#navbar{
+  display:inline;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+}
+#navbar ul{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+#navbar li{
+  margin: 2px;
+  padding: 5px;
+  display: inline;
+
+}
+a{
+  color: #660099;
+}
+#logo{
+  display: inline;
+  position: relative;
+  top: -25px;
+  /*I get a warning that these are ignored but when I take these three lines out it
+  messes up with my code. So I'm leaving them in and ignoring the warning */
+  height: 80px;
+  width: 80px;
+  float: left;
+
+}
+#current_page{
+  font-weight: bold;
+  color: #8800cc;
+}
+/*CSS for the home page */
+.header_title
+{
+  background-color: rgba(0,0,0,0.5);
+  background-image: url("/images/final_background_image.jpeg");
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#title, #title_caption{
+  color: white;
+  text-align: right;
+}
+#title{
+  font-family: Roboto;
+  font-weight: bolder;
+  font-size: 76px;
+  position: relative;
+  top: 100px;
+  padding-right: 5px;
+}
+#title_caption{
+  font-family: Cabin;
+  font-size: 20px;
+  font-style: italic;
+  position: relative;
+  top: 90px;
+  padding-right: 10px;
+}
+.col{
+  float: left;
+  width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#about_section{
+  background-color: #330033;
+}
+#bops_section{
+  background-color: #4d004d;
+}
+#flops_section{
+  background-color: #660066;
+}
+.col_title{
+  font-family: Roboto;
+  text-align: center;
+  color: white;
+}
+.col_text{
+  font-style: oblique;
+  font-family: Cabin;
+  color: #ffe6ff;
+  padding:5px;
+  text-align: center;
+}
+.to_next_page{
+    background-image: url("/images/right-arrow.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+/*CSS for the about page */
+.origin, .purple_section, .non_catchy{
+  padding:15px;
+}
+.purple_section{
+  background: linear-gradient(to bottom right,  #e6b3ff, #cc66ff);
+}
+.page_title{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.section_title{
+  font-family: Roboto;
+  font-size: 36px;
+  margin: 0;
+  padding: 5px;
+}
+/*CSS for bops and flops */
+.subtitle{
+  font-family: Cabin;
+text-align: center;
+font-size: 20px;
+}
+.album_cover {
+  height: 100px;
+  width: 100px;
+}
+/*CSS for the table */
+tr, td{
+  font-family: Cabin;
+  padding:15px;
+}
+.table_title {
+  color: #990099  !important;
+  text-align: left;
+  font-size: 18px;
+}
+td{
+  color: black;
+}
+.artists{
+  background-color:  #ffccff;
+}
+.sources{
+  background-color: #ff99ff;
+}
+.explanations{
+background-color: #ffb3ff;
+}
+.albums{
+  text-align: center;
+}
+.scroll_button{
+font-family: Cabin;
+background-color: #600080;
+border: none;
+padding: 5px;
+color: white;
+position: fixed;
+right: 20px;
+bottom: 30px;
+z-index: 99;
+cursor: pointer;
+}
+.scroll_button:hover{
+  background-color: #bf00ff;
+}
+ul, p, li{
+  font-family: Cabin;
+}
